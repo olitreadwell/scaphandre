@@ -16,7 +16,7 @@ This is easy to understand, and it matches how we might be billed for a share of
 
 #### Timesharing of work
 
-However, if the reality was _exactly_ like this diagram, our computers would only ever be able to do one thing at a time. It's more accurate and helpful to think of computers working on lots of different jobs at the same time - they work on one job for short interval of time, then another, and another and so one. You'll often see these small intervals of time referred to as _[jiffies](https://www.anshulpatel.in/posts/linux_cpu_percentage/)_.
+However, if the reality was _exactly_ like this diagram, our computers would only ever be able to do one thing at a time. It's more accurate and helpful to think of computers working on lots of different jobs at the same time - they work on one job for short interval of time, then another, and another and so on. You'll often see these small intervals of time referred to as _[jiffies](https://www.anshulpatel.in/posts/linux_cpu_percentage/)_.
 
 ![work on jobs is split into jiffies](../img/jiffies.png)
 
@@ -25,7 +25,7 @@ In a given amount of time, some jobs that are prioritized or more resource inten
 ![work on jobs is split into jiffies](../img/total-time-share.png)
 ### Going from share of resources to actual power figures
 
-It's possible without Scaphandre to understand how large a share of a machines' resources are being used by a given process.
+It's possible without Scaphandre to understand how large a share of a machine's resources are being used by a given process.
 
 This is useful, by itself, but if we want to understand how much _power_ is used per process, not just the share of the machine's resources, we need to know how much power is being used by the machine in absolute terms.
 
@@ -79,7 +79,7 @@ Between scaphandre and this data is the powercap kernel module that writes the e
 
 The PowercapRAPL sensor does actually more than just collecting those energy consumption metrics (and converting them to power consumption metrics).
 
-Every time the exporter asks for a measurement (either periodically like in the [Stdout](../references/exporter-stdout.md) exporter, or every time a request comes as would be the case for the Prometheus exporter) the sensor reads the values of the energy counters from powercap. It then stores those values, and does the same for the CPU usage statistics of the CPU (the one you can see in `/proc/stats`) and for each running process on the machine at that time (see `/proc/PID/stats`).
+Every time the exporter asks for a measurement (either periodically like in the [Stdout](../references/exporter-stdout.md) exporter, or every time a request comes as would be the case for the Prometheus exporter) the sensor reads the values of the energy counters from powercap. It then stores those values, and does the same for the CPU usage statistics of the CPU (the one you can see in `/proc/stat`) and for each running process on the machine at that time (see `/proc/PID/stat`).
 
 With this data it is possible to compute the ratio of CPU time actively spent for a given PID on the CPU time actively spent doing something. With this ratio we can then get the subset of power consumption that is related to that PID on a given timeframe (between two measurement requests).
 
