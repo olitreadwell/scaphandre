@@ -4,7 +4,7 @@ This guide provides an overview of the internal architecture of sensors and the 
 
 ## Important Structs and Traits
 
-First an overview of the the structs and traits defined in sensors/mod.rs. 
+First an overview of the structs and traits defined in sensors/mod.rs.
 
 ```rust,noplayground
 pub struct Record {
@@ -82,7 +82,7 @@ pub struct CPUSocket {
     pub attributes: Vec<Vec<HashMap<String, String>>>,
     /// Path to the file that provides the counter for energy consumed by the socket, in microjoules.
     pub counter_uj_path: String,
-    /// Comsumption records measured and stored by scaphandre for this socket.
+    /// Consumption records measured and stored by scaphandre for this socket.
     pub record_buffer: Vec<Record>,
     /// Maximum size of the record_buffer in kilobytes.
     pub buffer_max_kbytes: u16,

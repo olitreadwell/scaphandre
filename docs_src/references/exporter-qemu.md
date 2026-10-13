@@ -27,7 +27,7 @@ First create a tmpfs mount point to isolate metrics for that virtual machine:
     ```
     You can edit the vm properties using `sudo virsh edit <DOMAIN_NAME>` using your usual editor. But it is more convenient to use virtual-manager, as explained in the following screenshots.
 
-    *It also helps to define the correct syntax which probably depends from the qemu version. You can check that the above configuration is slightly different form the one below*.
+    *It also helps to define the correct syntax which probably depends from the qemu version. You can check that the above configuration is slightly different from the one below*.
 
     a. Right click in the hardware menu:
     ![virtualmgr00](images/virtualmgr00.png)

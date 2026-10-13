@@ -29,7 +29,7 @@ Options:
   -h, --help                       Print help
 ```
 
-With default options values, the metrics are sent to http://localhost:8080 every 60 seconds
+With default options values, the metrics are sent to http://localhost:8080 every 2 seconds
 
 Use -q or --qemu option if you are running scaphandre on a hypervisor. In that case a label with the vm name will be added to all `qemu-system*` processes.
 This will allow to easily create charts consumption for each vm and defined which one is the top contributor.

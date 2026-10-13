@@ -10,7 +10,7 @@ To ensure this is your issue and fix that quickly you can run the [init.sh](http
 
 Then run scaphandre. If it does not work, the issue is somewhere else.
 
-### I get a **no such device** error, the intel_rapl of intel_rapl_common kernel modules are present
+### I get a **no such device** error, the intel_rapl or intel_rapl_common kernel modules are present
 
 It can mean that your cpu doesn't support RAPL. Please refer to the [compatibility](compatibility.md) section to be sure.
 
@@ -20,7 +20,7 @@ If you are in a situation comparable to [this one](https://github.com/hubblo-org
 
 On ubuntu 20.01 and 20.10, try to install `linux-modules-extra-$(uname -r)` with apt. Then you should be able to `modprobe intel_rapl_common`.
 
-### On an AMD cpu machine, I get the following stracktrace
+### On an AMD cpu machine, I get the following stack trace
 
     scaphandre::sensors::powercap_rapl: Couldn't find intel_rapl modules.
     thread 'main' panicked at 'Trick: if you are running on a vm, do not forget to use --vm parameter invoking scaphandre at the command line', src/sensors/mod.rs:238:18
