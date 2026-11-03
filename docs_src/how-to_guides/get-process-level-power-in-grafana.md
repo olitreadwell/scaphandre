@@ -25,4 +25,4 @@ Here is how it looks, creating a panel in grafana:
 
 ![](../grafana-edit.png)
 
-Those labels are explained in much more detail [here](../references/exporter-prometheus.md#scaph_process_power_consumption_microwatts).
+Those labels are explained in much more detail [here](../references/metrics.md#getting-per-process-data-with-scaph_process_-metrics).

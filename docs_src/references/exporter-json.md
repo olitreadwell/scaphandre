@@ -14,13 +14,13 @@ You can change as well the step measure duration with -s. Here is how to display
 
     scaphandre json -t 60 -s 5
 
-If you want a faster interval you can use option -n (for nano seconds). Here is how to display metrics during 10s with a 100ms step:
+If you want a faster interval you can use option --step-nano (for nano seconds). Here is how to display metrics during 10s with a 100ms step:
 
-    scaphandre json -t 10 -s 0 -n 100000000
+    scaphandre json -t 10 -s 0 --step-nano 100000000
 
 By default, JSON is printed in the terminal, to write result in a file you can provide a path with option -f:
 
-    scaphandre json -t 10 -s 0 -n 100000000 -f report.json
+    scaphandre json -t 10 -s 0 --step-nano 100000000 -f report.json
 
 To get informations about processes that are running in containers, add `--containers`:
 

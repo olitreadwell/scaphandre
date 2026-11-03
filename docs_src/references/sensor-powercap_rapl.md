@@ -56,6 +56,6 @@ Since linux kernel package 5.4.0-53.59 in debian/ubuntu, powercap attributes are
       * CVE-2020-8694
         - powercap: make attributes only readable by root
 
-Therefor, the user running scaphandre needs to have read access to *energy_uj* files in `/sys/class/powercap`.
+Therefore, the user running scaphandre needs to have read access to *energy_uj* files in `/sys/class/powercap`.
 
 You can run the [init.sh](../../init.sh) script to apply appropriate permissions to the required files.

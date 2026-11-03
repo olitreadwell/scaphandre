@@ -41,7 +41,7 @@ means that the driver is not properly setup. Check it's state by running:
 
     driverquery /v | findstr capha
 
-If there is not item returned, the installation of the driver encountered an issue.
+If there is no item returned, the installation of the driver encountered an issue.
 
 If the service is STOPPED, there is also something wrong.
 

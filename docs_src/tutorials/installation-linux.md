@@ -18,7 +18,7 @@ Since Debian Sid, Scaphandre is available as an official package, try:
 If not (yet) in your official packages repositories, on Debian or Ubuntu, you can directly use the available `.deb` [package for Debian Bullseye](https://github.com/hubblo-org/scaphandre/releases/download/v1.0.0/scaphandre_v1.0.0-deb11_amd64.deb) or the [package for Debian Bookworm](https://github.com/hubblo-org/scaphandre/releases/download/v1.0.0/scaphandre_v1.0.0-deb12_amd64.deb).
 
     # For Debian Bookworm
-    VERSION="1.0.1" ARCH="amd64" DIST="deb12" && \
+    VERSION="1.0.2" ARCH="amd64" DIST="deb12" && \
     wget https://github.com/hubblo-org/scaphandre/releases/download/v${VERSION}/scaphandre_v${VERSION}-${DIST}_${ARCH}.deb && \
     dpkg -i scaphandre_v${VERSION}\-${DIST}\_${ARCH}.deb && \
     rm scaphandre_v${VERSION}\-${DIST}\_${ARCH}.deb
