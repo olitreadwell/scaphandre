@@ -763,7 +763,7 @@ impl Topology {
                     Record::new(
                         record.timestamp,
                         record.process.virtual_memory.to_string(),
-                        units::Unit::Percentage,
+                        units::Unit::Bytes,
                     ),
                 ),
             );
@@ -829,7 +829,7 @@ impl Topology {
                 res.insert(
                     String::from("scaph_process_power_consumption_microwatts"),
                     (
-                        String::from("Total data read on disk by the process, in bytes"),
+                        String::from("Power consumed by the process, in microwatts"),
                         Record::new(record.timestamp, result.to_string(), units::Unit::MicroWatt),
                     ),
                 );
