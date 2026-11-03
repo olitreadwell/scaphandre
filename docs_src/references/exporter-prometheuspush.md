@@ -18,7 +18,7 @@ As always exporter's options can be displayed with `-h`:
 	  -p, --port <PORT>      TCP port of the metrics endpoint for Prometheus [default: 9091]
 	      --suffix <SUFFIX>  [default: metrics]
 	  -S, --scheme <SCHEME>  [default: http]
-	  -s, --step <STEP>      [default: 5]
+	  -s, --step <STEP>      [default: 30]
 	      --qemu             Apply labels to metrics of processes that look like a Qemu/KVM virtual machine
 	      --containers       Apply labels to metrics of processes running as containers
 	  -j, --job <JOB>        Job name to apply as a label for pushed metrics [default: scaphandre]

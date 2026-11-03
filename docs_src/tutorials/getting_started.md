@@ -58,7 +58,7 @@ If you don't get this output and get an error, jump to the [Troubleshooting](../
 
 At that point, you're ready to use scaphandre. The Stdout exporter is very basic and other exporters should allow you to use and send those metrics the way you like.
 
-The [prometheus exporter](../references/exporter-prometheus.md), for example, allows you to expose power consumption metrics as an HTTP endpoint that can be scrapped by a [prometheus](https://prometheus.io) instance:
+The [prometheus exporter](../references/exporter-prometheus.md), for example, allows you to expose power consumption metrics as an HTTP endpoint that can be scraped by a [prometheus](https://prometheus.io) instance:
 
     docker run -v /sys/class/powercap:/sys/class/powercap -v /proc:/proc -p 8080:8080 -ti hubblo/scaphandre prometheus
 
